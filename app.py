@@ -248,8 +248,39 @@ st.set_page_config(
     layout="wide"
 )
 
+# Custom CSS to reduce font size and button spacing
+st.markdown("""
+    <style>
+    /* Reduce text size in buttons */
+    h1 {
+        font-size: 30px !important;
+    }
+            
+    h3{
+        font-size: 20px !important;
+    }
+            
+    .stButton>button {
+        font-size: 8px !important;
+        padding: 4px 10px !important;
+        margin: 2px !important;
+    }
+
+    /* Reduce column padding (between buttons) */
+    div[data-testid="column"] {
+        padding: 0rem 0rem !important;
+    }
+
+    /* Reduce vertical space after text area and headings */
+    .stTextArea, .stMarkdown {
+        margin-bottom: 0.25rem !important;
+    }
+    </style>
+""", unsafe_allow_html=True)
+
+
 st.title("🎬 Enhanced YouTube Comment Sentiment Analysis")
-st.markdown("---")
+
 
 # Check if models are loaded
 if model is None or vectorizer is None:
