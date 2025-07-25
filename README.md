@@ -17,7 +17,6 @@ Try it out (if deployed): [https://youtube-sentiment-analysis-cmznc5leg8bd9vdzpi
   - Conditional negatives (e.g. "good but slow")
   - Sarcasm-like patterns (e.g. "perfect... not")
   - Low ratings (e.g. "1/10", "1 star")
-- 📉 Flags short dismissive comments (e.g. "meh", "bad")
 - 💬 Predefined test examples for quick evaluation
 - 📊 Confidence-based classification with fallback logic
 - 📦 Model and vectorizer caching for faster loads
